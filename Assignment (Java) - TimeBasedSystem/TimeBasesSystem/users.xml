@@ -1,0 +1,24 @@
+<object-stream>
+  <list>
+    <sample.User>
+      <user__id>0</user__id>
+      <foreName>Evan</foreName>
+      <surname>Casey</surname>
+      <role>Manager</role>
+      <mobileNo>83468323</mobileNo>
+      <email>evancasey2002@gmail.com</email>
+      <userType>Manager</userType>
+      <password>timeBasedSystem</password>
+    </sample.User>
+    <sample.User>
+      <user__id>1</user__id>
+      <foreName>James</foreName>
+      <surname>casey</surname>
+      <role>Customer</role>
+      <mobileNo>8376234</mobileNo>
+      <email>conorcasey2002@gmail.com</email>
+      <userType>User</userType>
+      <password>1234</password>
+    </sample.User>
+  </list>
+</object-stream>

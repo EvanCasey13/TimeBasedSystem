@@ -1,0 +1,31 @@
+<object-stream>
+  <list>
+    <sample.ReservationData>
+      <reservationId>0</reservationId>
+      <userId>0</userId>
+      <reservationFacilityId>0</reservationFacilityId>
+      <date>13-11-2020</date>
+      <duration>09:00</duration>
+      <mobileNumber>83468323</mobileNumber>
+      <reservationEmail>evancasey@gmail.com</reservationEmail>
+    </sample.ReservationData>
+    <sample.ReservationData>
+      <reservationId>1</reservationId>
+      <userId>1</userId>
+      <reservationFacilityId>1</reservationFacilityId>
+      <date>11-11-2020</date>
+      <duration>12:00</duration>
+      <mobileNumber>83424324</mobileNumber>
+      <reservationEmail>conorcasey@gmail.com</reservationEmail>
+    </sample.ReservationData>
+    <sample.ReservationData>
+      <reservationId>2</reservationId>
+      <userId>2</userId>
+      <reservationFacilityId>1</reservationFacilityId>
+      <date>11-11-2020</date>
+      <duration>12:00</duration>
+      <mobileNumber>83424324</mobileNumber>
+      <reservationEmail>jamescasey@gmail.com</reservationEmail>
+    </sample.ReservationData>
+  </list>
+</object-stream>

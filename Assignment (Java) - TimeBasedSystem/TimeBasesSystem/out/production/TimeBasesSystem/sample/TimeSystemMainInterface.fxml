@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.image.Image?>
+<AnchorPane prefHeight="413.0" prefWidth="641.0" stylesheets="@timebasedsystem.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.TimeSystemController">
+   <children>
+      <HBox layoutY="327.0" prefHeight="88.0" prefWidth="641.0">
+         <children>
+            <TextArea fx:id="txtFeedBack" prefHeight="88.0" prefWidth="641.0" />
+         </children>
+      </HBox>
+      <VBox layoutX="-1.0" prefHeight="330.0" prefWidth="118.0">
+         <children>
+            <Label fx:id="dateLabel" alignment="CENTER" prefHeight="17.0" prefWidth="116.0" text="Pick a date and time" />
+            <DatePicker fx:id="datePicker" onAction="#selectDate" prefHeight="70.0" prefWidth="118.0" promptText="Select a Date" />
+            <ChoiceBox fx:id="hourChoice" prefWidth="150.0" />
+
+            <ImageView fx:id="photo" fitHeight="150.0" fitWidth="116.0" pickOnBounds="true" preserveRatio="true">
+
+               <Image url="/img/ourjavalogo.png"></Image>
+            </ImageView>
+
+
+
+         </children></VBox>
+      <SplitPane layoutX="115.0" prefHeight="330.0" prefWidth="6.0" />
+      <SplitPane layoutX="-3.0" layoutY="322.0" prefHeight="7.0" prefWidth="641.0" />
+      <GridPane layoutX="121.0" layoutY="27.0" prefHeight="297.0" prefWidth="346.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="txtReservationId" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="txtReservationFacilityId" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="txtReservationEmail" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="txtMobileNumber" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="txtUserId" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label prefHeight="17.0" prefWidth="175.0" text="Reservation Id" GridPane.rowIndex="2" />
+            <Label prefHeight="17.0" prefWidth="177.0" text="Reservation Facility Id" GridPane.rowIndex="3" />
+            <Label prefHeight="17.0" prefWidth="173.0" text="User Id" GridPane.rowIndex="6" />
+            <Label prefHeight="17.0" prefWidth="177.0" text="User Mobile Number" GridPane.rowIndex="5" />
+            <Label prefHeight="17.0" prefWidth="173.0" text="User Email" GridPane.rowIndex="4" />
+            <TextField fx:id="txtDuration" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="txtDate" editable="false" GridPane.columnIndex="1" />
+            <Label text="Reservation Time" GridPane.rowIndex="1" />
+            <Label text="Reservation Date" />
+         </children>
+      </GridPane>
+      <SplitPane layoutX="471.0" layoutY="-4.0" prefHeight="330.0" prefWidth="6.0" />
+      <VBox layoutX="476.0" prefHeight="321.0" prefWidth="162.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#handleManagerLogin" prefHeight="32.0" prefWidth="123.0" text="Manager Login">
+               <font>
+                  <Font size="10.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin></Button>
+            <TextField fx:id="txtManagerName" promptText="Manager Name" />
+            <PasswordField fx:id="txtManagerPassword" promptText="Password" />
+            <Label fx:id="txtManagerLoginFeedback" alignment="CENTER" prefHeight="17.0" prefWidth="163.0" text="Label" />
+            <Button mnemonicParsing="false" onAction="#addReservation" prefHeight="25.0" prefWidth="123.0" text="Add Reservation">
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#handleDeleteReservation" prefHeight="25.0" prefWidth="123.0" text="Delete Reservation">
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#handleReservationSave" prefHeight="25.0" prefWidth="123.0" text="Save Reservation">
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#handleReservationLoad" prefHeight="25.0" prefWidth="122.0" text="Load Reservation">
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#handleUpdateReservation" prefHeight="25.0" prefWidth="122.0" text="Update Reservation">
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#handleReadReservation" prefHeight="26.0" prefWidth="122.0" text="Read Reservation">
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

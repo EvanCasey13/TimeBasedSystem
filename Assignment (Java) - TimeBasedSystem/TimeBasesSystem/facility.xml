@@ -1,0 +1,12 @@
+<object-stream>
+  <list>
+    <sample.FacilityData>
+      <facilityId>0</facilityId>
+      <facilityName>No 9 Cafe</facilityName>
+    </sample.FacilityData>
+    <sample.FacilityData>
+      <facilityId>1</facilityId>
+      <facilityName>Eddie rockets</facilityName>
+    </sample.FacilityData>
+  </list>
+</object-stream>
